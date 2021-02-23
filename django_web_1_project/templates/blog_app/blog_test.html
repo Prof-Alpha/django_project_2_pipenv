@@ -1,0 +1,9 @@
+{% extends "base_temp.html" %}
+
+{% block content %}
+    <P>From blog test page.</p> 
+
+    {% for obj in object_list %}
+        {{ obj.title }} {{'|'}} {{obj.text}} {{'|'}} {{obj.author}} <br>
+    {% endfor %}
+{% endblock content %}  
